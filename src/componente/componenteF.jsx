@@ -15,10 +15,10 @@ const ComponenteF = (props) => {
         <div>
             <h2>
             Hora Actual:
-            {this.state.fecha.toLocaleTimeString()}
+            {props.fecha.toLocaleTimeString()}
             </h2>
-            <h3>{this.state.nombre} {this.state.apellidos}</h3>
-            <h1>Edad: {this.state.edad}</h1>
+            <h3>{props.nombre} {props.apellidos}</h3>
+            <h1>Edad: {props.edad}</h1>
         </div>
     );
 }
